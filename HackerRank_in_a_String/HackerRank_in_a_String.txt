@@ -1,0 +1,3 @@
+Using a saved array and an index to move on the array, 
+search for each character sequentially character by character, 
+when i find the whole characters, i break after making the flag = 1
