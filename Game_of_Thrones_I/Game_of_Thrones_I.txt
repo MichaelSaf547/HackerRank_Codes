@@ -1,0 +1,7 @@
+First, we found the how many of each characters are existed in the string.
+
+Second, if the length is even then if any characters have odd number we break after makes the flag = 2,
+		but if the flag still equals to 0 that means arr has all even numbers so we make it 1 to be YES.
+		
+Third, if the length is odd we search for only on index that have odd number, if we have more than one index 
+		we make the flag = 2 and break.
