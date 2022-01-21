@@ -1,0 +1,3 @@
+Start from the end of the string 
+when we find any two adjacent charchters, 
+just increase the result by one. 
