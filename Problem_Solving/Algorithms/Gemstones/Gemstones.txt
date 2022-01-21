@@ -1,0 +1,9 @@
+First: create an array of 26 char works as a flag for the charchters so we don't check the same char twice.
+		and initialize it with 0.
+		
+Second: search for the shortest string to work on it.
+
+Third: for each char in the shortest string i check if it has not been checkes before.
+		then i search for that charchter in all the other strings using function "find_char"
+		if that charchter exists in all the strings increase the result by 1.
+		
