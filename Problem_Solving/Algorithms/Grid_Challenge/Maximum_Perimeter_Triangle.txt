@@ -1,0 +1,9 @@
+First: sort the array using mergesort algorithm.
+
+Second: As we know, to have a triangle, the sum of any two sticks must be longer than the third one.
+As the array is sorted and we search it from the right side, 
+any length that is smaller than the previous two elements can create a triangle.
+
+When we find a triangle we break if not the variable i will be 1 (break out for loop) so,
+we check if it is 1, means we counld not find a triangle and the flag = 0.
+ 
