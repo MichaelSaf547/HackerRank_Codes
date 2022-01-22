@@ -1,0 +1,13 @@
+The problem is asking for a smallest number that multiplied by two and subtract the next number.
+
+I reversed the array and started from the last number, 
+assuming that we have zero after the last Subtraction operation.
+
+Remember we reversed the array so, we will revers the operations.
+
+First we divide the number by 2.
+Second we add the previous number to it.
+
+We have even flag to check that all the calculated digits (sub variable) are even if any of them is odd,
+we know that we ignored a part of the value during division so after the whole operation are done, 
+we add one.
