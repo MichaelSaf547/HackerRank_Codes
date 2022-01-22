@@ -1,0 +1,6 @@
+First: sort each string individually using mergesort algorithm
+
+Second: check each column if it is sorted or not if it not we break by forcing
+		the condition of the while to be false
+		
+		use while to check each column and the for to check each row with the next row.
