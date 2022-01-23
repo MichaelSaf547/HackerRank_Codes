@@ -1,0 +1,7 @@
+Using an array of 26 char to check the presence of each charachter.
+
+If the charachter exists we equal it to one.
+
+Then using for loop check the array if all are ones then it is pangram. 
+If not, it is not pangram.
+
