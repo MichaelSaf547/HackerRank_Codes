@@ -1,0 +1,4 @@
+As the constraints confirms that,
+the array has the element and the array is sorted, 
+so move on each element till one of them is equal to V,
+then break and return this index.
