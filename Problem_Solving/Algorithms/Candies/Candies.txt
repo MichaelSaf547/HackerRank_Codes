@@ -1,0 +1,49 @@
+First: we start with the value of 1(Greedy Algorithm)
+
+Second: We check the next element in compare to the previous element, we have three cases:
+
+1- The element is larger than the previous one:
+	
+	we increase the prev value "which keeps the last used value" by 1. (prev + 1)
+	then we increase the res with the prev value. (res += prev)
+
+2- The element is equal to the previous one:
+	
+	whats ever the prev value is we equal it to one. (prev = 1)
+	then we add it to the res. (res += prev)
+
+3- The element is smaller than the previous one:
+	
+	notice here: flag var: indicates how many previous numbers need to be increased
+						in another way it indicates how many times have we come to this else.
+				start_prev var: keeps the prev value save as we have cases might need it.
+	
+	we have many cases here: 
+		if the prev value is one: that means we need to increase the previous used value from one to two
+		so we add two to the res var.
+		and the flag value is equal to two.
+		
+		else the prev value is not one: that means we just make the prev value equals one and add it to res var. 
+		and make the flag value to be one.
+		
+		but what if we have something like this:
+			4, 2, 9, 8, 6
+			1				start with one.
+			
+			2, 1			the value is lower than and prev = 1,
+							so we increase the previous value and make this equal to one.
+							
+			2, 1, 2			the value is higher than the previous so just prev + 1.
+			
+			2, 1, 2, 1		the value is lower than and prev = 2,
+							so we just reduce the prev value and equal it one.
+							
+			2, 1, 3, 2, 1	the value is lower than and the prev = 1, 
+							lets follow the normal case and just increase the previous one
+							results in 2, 1, 2, 2, 1 so notice here that (the number 9 and 8 got the same value 2, wrong!!!)
+							that's why we need to keep the prev value to now the value 
+							that we can not reach which equals to two here (start_prev = 2).
+		
+		
+		so i keep it and if it is equal to flag plus 1, i add one to the res as an 
+		increase indicator of the start number which is 9 here in our example.
