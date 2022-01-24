@@ -1,0 +1,7 @@
+First: Sort the list.
+
+Second: Create a var with -101 (out of the given range in the constrains).
+
+Third: ssearch for the first element smaller than the largest one.
+
+Fourth: if not found print not found.
