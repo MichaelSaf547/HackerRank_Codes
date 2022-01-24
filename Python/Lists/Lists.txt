@@ -1,0 +1,7 @@
+First: Create an empty list.
+
+Second: Loop over the range of N.
+
+Third: read the input string and split it depending on space.
+
+Fourth: check the first value using if elif else and perform the required function.
