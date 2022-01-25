@@ -1,0 +1,1 @@
+Just comvert the input to tuple and use hash function with the tuple.
