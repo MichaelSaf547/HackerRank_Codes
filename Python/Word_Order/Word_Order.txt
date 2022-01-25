@@ -1,0 +1,11 @@
+Read the number of strings.
+
+Create an empty dictionary.
+
+Loop over the length range and read the input string.
+
+If the input is in the dictionary we increase the value of it by 1.
+
+Else add the input string as a new key for the dictionary and assign it's value to 1. 
+
+Then print the length of the dictionary and print the values of the dictionary keys.
