@@ -1,0 +1,12 @@
+Read the length of the available shoe sizes.
+
+Read the shoe sizes and convert them into counter.
+
+Read the length of the customers.
+
+For loop over the length of customers and check if we have this size in the shoe sizes counter
+if it has only one delete it from the counter otherwise reduce it by 1.
+
+Sum the price of the shoe and continue looping.
+
+Print the res after the for ends.
