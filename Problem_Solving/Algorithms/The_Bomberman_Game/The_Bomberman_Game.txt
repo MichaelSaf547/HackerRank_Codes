@@ -1,0 +1,32 @@
+Let's talk about the problem first: 
+1- In the first second nothing happens.
+2- In the second second the whole grid has booms.
+3- In the third second the start booms explode.
+4- In the fourth second the whole grid has booms.
+5- In the fifth second the booms of the second second explode.
+6- In the sixth second the whole grid has booms.
+
+So if you noticed that every even second the whole grid has booms.
+Another thing you can notice if you assume an example and follow it, 
+that it repeats itself every time (3, 7, 11, 15, ...) are exact and (5, 9, 13, 17, ...) are exact.
+
+I created two helper functions:
+1- bomberMan_a, to full the grid with booms
+2- bomberMan_3, it solves the first explosion at the third second. It equals the result of (3, 7, 11, ...)
+, and equals to the reflection of (5, 9, ...) so if the n is a number in this values just call the function twice.
+
+bomberMan_a is called whenever n is even(n % 2 = 0)
+
+bomberMan_3 is called if any other value but not 1:
+(n = 1) nothing happens
+(n % 4 = 3) call the function bomberMan_3 one time
+(n % 4 = 1) call the function bomberMan_3 two times
+
+bomberMan_3 is implemented that i search for the booms('O') and
+after that i convert the five cells(Up, Down, Left, Right) to ('x')
+but if any of the four cells equals('O') i leave it to change the
+four cells around it first then change it.(look the example down)
+after that i search for the ('x') and change them into ('.')
+(change into clear cells as they have already exploded)
+and search for the('.') and convert them into ('O')
+(change into boom cells as they filled with booms and did not explode)
