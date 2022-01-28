@@ -1,0 +1,36 @@
+I used Dynamic Programming to solve this problem.
+
+Create a two dimensional array of (s1 length + 1)(s2 length + 1)
+and whenever the row or column equals 0, but 0 in the array.
+If the s1[index1 - 1] = s2[index2 - 1] take the value of the arr[index1 - 1][index2 - 1] + 1
+else just take the max of  arr[[index1][index2 - 1] and arr[index1 - 1][index2]
+
+lets take an example:
+
+s1 = "Michael"
+s2 = "Mechal"
+
+		M	i	c	h	a	e	l
+
+	0	0	0	0	0	0	0	0	(i = 0)
+
+M	0	1	1	1	1	1	1	1
+
+e	0	1	1	1	1	1	2	2
+
+c	0	1	1	2	1	1	2	2	
+
+h	0	1	1	2	3	3	3	3
+
+a	0	1	1	2	3	4	4	4
+
+l	0	1	1	2	3	4	4	5
+
+	(j = 0)	
+	
+So the result = 5 (Mchal)
+
+but as the string length increases creating two dimensional array becomes not applicable.
+So just use two rows and update each depend on the previous one so i use i % 2 -> even time and odd time
+
+and return the last value of the last modified row [(i - 1) % 2][s1 length]
