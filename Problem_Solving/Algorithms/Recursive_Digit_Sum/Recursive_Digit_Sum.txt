@@ -1,0 +1,9 @@
+The problem is requested to be solved using Recursion.
+
+1- The end condition is that the input string length equals 1, 
+if true return the number that is inside the string.
+
+2- If not true we calculate the sum of the numbers 
+(i sum using (n[i] - '0') --> to get the decimal value after removing ascii value)
+in the string and multiply the sum into k then convert the result into string
+and then it again to the same function till meets the end condition.
