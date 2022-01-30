@@ -1,0 +1,14 @@
+i: is the index we are checking in the cities array.
+start: is the first element that is needed to be electricaly covered. (start with 0)
+prev: is the last element i can search in for the a city to use it. (start with -1)
+
+we start with i = start + k - 1 trying to get the furthest city from the start
+that if we used it, it would cover the start city also. 
+Then we ask if it is 1(suitable for power plant) then fine we increase the res by 1,
+ make the start equals to the this city plus k cities, 
+ and make prev equals to this city(so we can not search in this city just after it). 
+
+if the city was 0(not suitable), we start going back into cities till find the first city that equals to 1,
+ and do the same as above.
+But if we reached the prev value without finding a city that is suitable to power plant,
+ we break and return 0.
