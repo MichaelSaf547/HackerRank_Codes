@@ -1,0 +1,9 @@
+1- Check if the length is odd or even: 
+	if odd: retuen -1 as we can not devide one string to two strings with the same length.
+	
+	else even: 
+	
+		Create 2 arrays of length 26 each represent how many character of each character
+		Then choose an array to be converted to the second string and go on the array of this string, 
+		if any location on the array is larger than the same location in the second array,
+		sum the difference to the res.
