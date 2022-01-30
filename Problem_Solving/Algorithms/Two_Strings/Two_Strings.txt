@@ -1,0 +1,7 @@
+As the problem says that even if just one character exists 
+in the two strings is enough to make the answer yes,
+
+Create a string of just one character "a" and search for that in both, 
+If found, return "YES". If not increase the char by 1 for "a" to "b" 
+and so on till find a character that exists in both 
+of them or get out of all characters > "z" then return "NO"
