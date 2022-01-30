@@ -1,0 +1,3 @@
+Create two arrays two represents the numbers of times a char apperas in each string,
+
+then sum the differences between each two element in the same in index in the two arrays.
