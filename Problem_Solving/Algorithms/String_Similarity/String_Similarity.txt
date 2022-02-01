@@ -1,0 +1,6 @@
+
+1- Using Z algorithm: by finding the z array and sum its values, 
+1-1 Create an array of string length. 
+1-2 Call the getZarr function.
+1-3 Sum the array after that.
+
