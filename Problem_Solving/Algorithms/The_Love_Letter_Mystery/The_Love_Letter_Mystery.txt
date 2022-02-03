@@ -1,0 +1,3 @@
+Move from the start of the string till the middle of it,
+sum the difference between this index and the opposite one ("abc", 'a' and 'c' are opposite)
+the total sum is the result.;
