@@ -1,0 +1,25 @@
+1- Sort the input array using Mergesort algorithm.
+
+2- Check if the p is smaller than the first element of the array, 
+if yes then the max difference is arr[0] - p as any other element 
+will have a higher value in the row, 
+and from p to arr[0] all the values will be decreasing so no need to calc these values. 
+
+Ex, if p = 5, q = 12, and the array = {10 , 15}
+5: (10 - 5 = 5) (15 - 5 = 10)  --> 5 (arr[0] - p) 
+6: (10 - 6 = 4) (15 - 6 = 9)   --> 4 (arr[0] - 6)
+.								   3
+.								   2
+. 						
+so till arr[0] the value will be decreasing, so we move i to arr[0] + 1
+
+and if i is larger that arr[last_element], 
+no need for calculation just (q - arr[last_element]) is the max (the verse of the above)
+
+If i value is between two elements using while loop get these two elements and get the average of these
+tow elements, this average is the farest value from both elements and move i to the higher element.
+
+but notice here some cases: 
+1- This average might be higher than q, so use q instead of mean.
+2- mean is smaller than p(at the start), so use i instead of mean. 
+
