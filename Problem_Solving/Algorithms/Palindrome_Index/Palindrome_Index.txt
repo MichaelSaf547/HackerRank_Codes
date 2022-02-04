@@ -1,0 +1,4 @@
+1- Start from the first charcter and compare it with the opppsite,
+if they are not equal search for an element that equal to the one of these two 
+if it the one next to the first then the second charcter need to be removed,
+if it the one before the second then the first charcter need to be removed. 
