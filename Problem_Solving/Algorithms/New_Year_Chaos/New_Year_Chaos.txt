@@ -1,0 +1,27 @@
+1- Move over the array and if any element is away of its place 
+by more than 2 location break and print "Too chaotic".
+
+2- If no element is away from its place by more than 2, we need to 
+find how many numbers on the right of each element that is smaller than that element.
+
+Ex. 2 1 5 3 4 
+
+we start at 2: have 1 smaller 			--> 1
+			1: have nothing smaller 	--> 1
+			5: have 3, 4 smaller		--> 3
+			3: have nothing smaller		--> 3
+			4: have nothing smaller		--> 3
+			
+	So the result is 3.
+	
+So using mergesort, whenever an element on the right is 
+smaller than an element on the left, sum the number of elements that will be moved.
+
+Ex
+
+	left 			right
+	
+1  2  5  7   	  3  4  8  6
+
+so when we compare 5 and 3 we find the right element is smaller 
+so add the length of the rest of the left array. Here it is 2 == (5, 7)
