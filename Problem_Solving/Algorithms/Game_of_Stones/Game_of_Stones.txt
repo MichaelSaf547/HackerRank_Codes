@@ -1,0 +1,4 @@
+Using Dynamic programming algorithm, set the first five values of the array,
+then element by element if the elements of (index - 2, index - 3, index - 5), 
+all have the value of 1 that mean that the second will win for sure so add zero in
+this position and vice verse if any of the three values is zero add one to the index.
