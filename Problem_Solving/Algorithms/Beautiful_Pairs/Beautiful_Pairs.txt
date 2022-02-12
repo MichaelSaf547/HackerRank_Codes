@@ -1,0 +1,10 @@
+Create an help array of 1001 element
+Loop over the B array to detect which numbers exist in the array, 
+and each number increase its position in the help array.
+
+Then loop over the A array check if this number exists in the help array, 
+if yes then increase the pairs by one and decrease the existence of that number from the help array, 
+if no do nothing.
+
+Then check the pairs if it equals to the length we must decrease it by 1, as the problem statment
+said you must change one number. If it is smaller than the length just increase it by 1.  
