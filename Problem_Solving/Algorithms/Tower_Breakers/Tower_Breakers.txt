@@ -1,0 +1,10 @@
+Any player will move from x to 1 to prevent the other player from playing 
+So if the number of towers is odd, the first player will win
+			: player1 tower1, tower3, ..., tower(n) the last one to play
+			: player2 tower2, tower4, ..., tower(n - 1)
+			
+	and vice versa if the number of towers is even the second player will win.
+	
+	
+Notice: if the towers height is 1 the first player will not have an option to play so he will lose,
+		with no regards to the number of towers.
