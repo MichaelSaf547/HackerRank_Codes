@@ -1,0 +1,9 @@
+Sort the array using Mergesort algorithm.
+Searching for (element value + k value) in the next elements in the array.
+
+Exist(&(arr[i + 1]), (arr_count - i - 1), arr[i] + k)
+&(arr[i + 1]): the address of the next element and the rest of the array.
+(arr_count - i - 1): the length of the rest elements in the array.
+arr[i] + k: the target value to search for in the array.
+
+Using Binary Search algorithm.
