@@ -76,7 +76,6 @@ int mergesort(int * ptr, int len)
 
 void minimumBribes(int q_count, int* q) {
     int i = 0;
-    int j = 0;
     int temp = 0;
     int flag = 0;
     
