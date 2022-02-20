@@ -1,0 +1,24 @@
+start: is the number of the sequence.
+search_for: is the number that we are searching for.
+i: is a counter over the string in the while loop.
+len: is the length of the string.
+rest_len: is the length of left charcters in the string. (on the right hand of the i)
+number_len: is the length of the search number.
+temp: is a string equal to the search_for number.
+flag: to indicator the result is it yes or no.
+
+1- If the first charcter is '0', we have leading zero and it is not allowed so flag = 0 and end.
+2- Else, the search_for equals start + 1 and the temp equals the string conversion of search_for.
+3- Using strstr function try to find the temp in the s string but notice, 
+3-1- The searching procss must start from the ith charcter. ("12" 34567891011 "12")
+3-2- The result must be the address of the ith element. ("7" "8" 7 "9") it should return 78 so 
+	if we neglect that condition it will find the 9 in the string and it might return 7 or no result.
+	
+4- If the result of the 3- is true make flag = 1, increment the search_for number by one and 
+	increment i by the number_len.
+5- If the result of the 3- is false check if the flag = 1:
+	then the start number is wrong and we need to recreate the start number.
+6- If the flag = 0: multiply the start by 10 and add the ith element to the start number.
+
+7- Each time check if the rest_len >= number_len to enable us to search for the number, as we can not find 
+	"111" in "11".
