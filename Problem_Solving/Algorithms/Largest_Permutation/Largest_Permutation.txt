@@ -1,0 +1,21 @@
+i: is an itreator over the array elements.
+key: is a variable to indicate the largest value to be inserted.
+
+1- Looping over the ith elements and the k(the number of swaps)
+2- Check if the value of the element is equals to the key.
+3- If yes: reduce th key value.
+   If No: change the value of the of the ith element that equals the key with the compared element value.
+		  by calling change function.
+		  set the compared element value to the key value.
+		  reduce the key value by 1.
+		  reduce the avaliable number of swaps by 1.
+4- Set the value of the *result_count to the array length.
+
+
+change function: 
+Inputs: 1- int * ptr: array to swap inside it.
+		2- int len: length of the array.
+		3- int change_num: the value to search for to change.
+		4- int change_with: the value to change the value of the found ith element with. 
+		
+Search for the change_num and when find it, change it with the change_with and break.
