@@ -1,0 +1,17 @@
+max_negative function: is used to check if all the elements are smaller than 1 
+						if all the values are smaller than 1 it returns the max of these values.
+						else it returns 1.
+						
+	Initalize the res with 0x80000000 -the maximum negative value- 
+	then check if any digit is greater than 0 break; and return 1
+	else search for the max value in the array.
+	
+	
+maxSubarray function: is used to find the sum of all positive values and the max sum of a subset.
+						First check if it has positive values or all are negative.
+						if all negative then add the returned value in the array, in both locations.
+						else, first: sum the positive values in max_positive variable.
+							second: sum the value of the ith element in the temp and check it 
+							if the temp value is higher than max, put it into the max, and 
+							if the temp value goes to zero or negative, set temp to zero as
+							no need for all the previous subset.
