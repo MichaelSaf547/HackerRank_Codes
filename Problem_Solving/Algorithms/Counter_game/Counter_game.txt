@@ -1,0 +1,36 @@
+If the input is 1 then Louise can not play and Richard win
+else, start with i = 63, where i indicates the shifting of 1
+
+then compare n with the 1 << i, we have 3 cases
+1- The shifted value is larger than the input so just continue the loop.
+
+Ex: n = 5 --> 0101,  i = 63 --> 1000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+so just ignore it and go to i = 62 and continue till this condition is false.
+
+
+2- They are equal this means that the value is 2 to the power of i. 
+  so if i is even 2, 4, 6, ..., do not do anything just break and if it is odd flip the flag then break
+  
+Ex: n = 16 --> 0001 0000,  i = 4 --> 0001 0000 so 
+player make it 8 
+second make it 4
+player make it 2
+second make it 1 and win 
+so the value of the flag will stay as it no changes happens as we have even number of plays. 
+
+If it is odd we need to flip it 
+Ex: n = 8 --> 0000 1000,  i = 3 --> 0000 1000 so 
+player make it 4 
+second make it 2
+player make it 1 and win 
+so the one who was the flag in favor to him loses 
+
+3- The shifted value is smaller than the input so subtract  the input from the shifted value.
+ and flip the flag as the player played one time.
+notice that the shifted value alwayas has only one 1 in its binary so when the shifted value is smaller this means
+that the i has the position of the most significant 1 in the input value and the input value has more ones in it.
+
+
+Ex: n = 20 --> 0001 0100,  i = 4 --> 0001 0000 
+so 20 - 16 = 4 flag is flipped
+and continue the loop.
