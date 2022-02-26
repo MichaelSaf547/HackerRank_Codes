@@ -1,0 +1,23 @@
+1- Find the difference between the two inputs and if the difference equals 0 return a or b.
+2- If the difference is not 0 search for the binary number that handle the difference
+Ex: 
+a = 10, b = 14 the difference equals 4
+10 --> 0000 1010
+14 --> 0000 1110 
+the binary number is 2 as 2 to the power of 2 equals 4 = the difference
+2 here indicates that 2 bits are needed to handle the difference.
+
+and if the difference is not a power of 2 search for the one that is larger 
+
+Ex: 
+a = 11, b = 14 the difference equals 3
+11 --> 0000 1011
+14 --> 0000 1110 
+the binary number is 2 as 2 to the power of 2 equals 4 > the difference
+2 here indicates that 2 bits are needed to handle the difference.
+ 
+3- Then shift the a value to the right by the i value and shift it to the left again to just make these bits equal 0
+
+4- If the the binary value is larger than the difference value, 
+do the same as 3 above, and after this and the a value with b to get the res.
+ 
