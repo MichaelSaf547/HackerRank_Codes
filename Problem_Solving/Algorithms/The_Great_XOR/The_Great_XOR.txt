@@ -1,0 +1,25 @@
+1- As the input is long we loop from 0 till 63. 
+2- Shift a 1 to the position i and check this value if it larger than the input value x. break.
+3- If smaller, XOR the input value with the shifted value and compare it with the input value.
+4- If it is larger (what we are searching for) add the shifted value to the res.
+5- If it is smaller or equal just continue the loop.
+
+
+Ex x = 10
+
+i = 0, shifted value = 1, shifted value < x so continue, shifted value XOR x = 10 ^ 1 = 11
+11 > 10, so add 1 to the res. (res = 1)
+
+i = 1, shifted value = 2, shifted value < x so continue, shifted value XOR x = 10 ^ 2 = 8
+8 < 10, so continue.
+
+i = 2, shifted value = 4, shifted value < x so continue, shifted value XOR x = 10 ^ 4 = 14
+14 > 10, so add 4 to the res. (res = 5)
+
+i = 3, shifted value = 8, shifted value < x so continue, shifted value XOR x = 10 ^ 8 = 2
+2 < 10, so continue.
+
+i = 4, shifted value = 16, shifted value > x so break and return res = 5.
+
+
+
