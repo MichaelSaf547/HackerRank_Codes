@@ -1,0 +1,11 @@
+char ** res is a pointer to two dimensional array.
+int i, j are counters for the loops.
+int temp is an array to sum the length of the longest contiguous substring of same char.
+int temp_value is used as a temporary for the value that will be saved in the temp array. 
+
+1- Loop over the string char by char and if they are equal increase the temp_value by 1.
+2- If not equal, compare it with the saved value in the temp array and save the largest.
+3- Multiply each location in the array by the factor for each character.
+4- Loop over the queries and for each query search for a value which modulus equals 0 
+    and is smaller than or equal the value in the array.
+5- Whenever you find a number save "Yes" to the res otherwise save "No".
