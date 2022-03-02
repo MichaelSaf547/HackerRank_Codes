@@ -1,0 +1,4 @@
+1- Find the existence of each charcter as each charcter need one to construct it. 
+2- If the charcter is not exist no need for it.
+3- If the charcter exists more than one time, use the first occurence to handle this one.
+    So, nothing more needed.
